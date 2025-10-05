@@ -21,6 +21,9 @@
 }
 ```
 #### Sample of a Claude Desktop file to configure MCP servers
+The file should be located in a path such as `~/Library/Application\ Support/Claude/claude_desktop_config.json`  
+
+- Sample for a Python MCP server  
 ```json
 {
   "mcpServers": {
@@ -31,6 +34,20 @@
         "/ABSOLUTE/PATH/TO/PARENT/FOLDER/weather",
         "run",
         "weather.py"
+      ]
+    }
+  }
+}
+```
+
+- Sample for a Typescript MCP server  
+```json
+{
+  "mcpServers": {
+    "weather": {
+      "command": "node",
+      "args": [
+        "/home/anyuser/quickstart-resources/weather-server-typescript/build/index.js"
       ]
     }
   }
