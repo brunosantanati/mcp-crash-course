@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "weather": {
+      "command": "node",
+      "args": [
+        "/ABSOLUTE/PATH/TO/PARENT/FOLDER/weather/build/index.js"
+      ]
+    }
+  }
+}
