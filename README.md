@@ -5,6 +5,7 @@
 [Discord](https://discord.com/invite/SP2cz4JcGg)  
 [weather-server-typescript](https://github.com/modelcontextprotocol/quickstart-resources/tree/main/weather-server-typescript)  
 [Cursor / MCP](https://cursor.com/docs/context/mcp)  
+[Build an MCP server](https://modelcontextprotocol.io/docs/develop/build-server)  
 
 #### Sample of a mcp.json (Cursor file to configure MCP servers)
 ```json
@@ -18,5 +19,20 @@
     }
   }
 }
-
+```
+#### Sample of a Claude Desktop file to configure MCP servers
+```json
+{
+  "mcpServers": {
+    "weather": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/ABSOLUTE/PATH/TO/PARENT/FOLDER/weather",
+        "run",
+        "weather.py"
+      ]
+    }
+  }
+}
 ```
