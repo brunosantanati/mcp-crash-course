@@ -46,9 +46,7 @@ The file should be located in a path such as `~/Library/Application\ Support/Cla
   "mcpServers": {
     "weather": {
       "command": "node",
-      "args": [
-        "/home/anyuser/quickstart-resources/weather-server-typescript/build/index.js"
-      ]
+      "args": ["/ABSOLUTE/PATH/TO/PARENT/FOLDER/weather/build/index.js"]
     }
   }
 }
