@@ -6,6 +6,12 @@
 [weather-server-typescript](https://github.com/modelcontextprotocol/quickstart-resources/tree/main/weather-server-typescript)  
 [Cursor / MCP](https://cursor.com/docs/context/mcp)  
 [Build an MCP server](https://modelcontextprotocol.io/docs/develop/build-server)  
+[Core architecture- official Model Context Protocol Documentation](https://modelcontextprotocol.io/docs/learn/architecture)  
+[MCP Spec- Transports](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports)  
+[Running MCP Servers with Transports- FastMCP 2.0](https://gofastmcp.com/servers/server#running-the-server)  
+[Server (Low Level)](https://github.com/modelcontextprotocol/python-sdk/blob/main/src/mcp/server/lowlevel/server.py)  
+[FastMCP](https://github.com/modelcontextprotocol/python-sdk/blob/main/src/mcp/server/fastmcp/server.py)  
+[FastMCP 2.0](https://gofastmcp.com/getting-started/welcome)  
 
 #### Sample of a mcp.json (Cursor file to configure MCP servers)
 ```json
