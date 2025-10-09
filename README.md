@@ -16,6 +16,9 @@
 [MCP Inspector Github Repository Open Source](https://github.com/modelcontextprotocol/inspector)  
 [LangChain LLM.txt](https://langchain-ai.github.io/langgraph/llms-txt-overview/)  
 [mcpdoc Github Repo](https://github.com/langchain-ai/mcpdoc)  
+[MCP Crash Course Github Repository](https://github.com/emarco177/mcp-crash-course)  
+[MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)  
+[MCP Docs](https://modelcontextprotocol.io/docs/getting-started/intro)  
 
 #### Sample of a mcp.json (Cursor file to configure MCP servers)
 ```json
