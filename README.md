@@ -12,6 +12,10 @@
 [Server (Low Level)](https://github.com/modelcontextprotocol/python-sdk/blob/main/src/mcp/server/lowlevel/server.py)  
 [FastMCP](https://github.com/modelcontextprotocol/python-sdk/blob/main/src/mcp/server/fastmcp/server.py)  
 [FastMCP 2.0](https://gofastmcp.com/getting-started/welcome)  
+[MCP Inspector Official Docs](https://modelcontextprotocol.io/docs/tools/inspector)  
+[MCP Inspector Github Repository Open Source](https://github.com/modelcontextprotocol/inspector)  
+[LangChain LLM.txt](https://langchain-ai.github.io/langgraph/llms-txt-overview/)  
+[mcpdoc Github Repo](https://github.com/langchain-ai/mcpdoc)  
 
 #### Sample of a mcp.json (Cursor file to configure MCP servers)
 ```json
