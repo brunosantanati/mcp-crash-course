@@ -64,3 +64,22 @@ The file should be located in a path such as `~/Library/Application\ Support/Cla
   }
 }
 ```
+#### Commands used
+```
+sudo snap install astral-uv --classic
+uv venv
+source .venv/bin/activate
+uv pip install .
+which uv
+
+uvx --from mcpdoc mcpdoc \
+    --urls "LangGraph:https://langchain-ai.github.io/langgraph/llms.txt" "LangChain:https://python.langchain.com/llms.txt" \
+    --transport sse \
+    --port 8082 \
+    --host localhost
+
+nvm list
+nvm use 20.11.0
+
+npx @modelcontextprotocol/inspector
+```
