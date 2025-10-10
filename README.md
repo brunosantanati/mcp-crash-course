@@ -21,6 +21,7 @@
 [MCP Docs](https://modelcontextprotocol.io/docs/getting-started/intro)  
 
 #### Sample of a mcp.json (Cursor file to configure MCP servers)
+The file should be located in ~/.cursor/mcp.json
 ```json
 {
   "mcpServers": {
@@ -28,6 +29,18 @@
       "command": "/home/anyuser/.nvm/versions/node/v20.11.0/bin/node",
       "args": [
         "/home/anyuser/quickstart-resources/weather-server-typescript/build/index.js"
+      ]
+    },
+    "langgraph-docs-mcp": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "mcpdoc",
+        "mcpdoc",
+        "--urls",
+        "LangGraph:https://langchain-ai.github.io/langgraph/llms.txt LangChain:https://python.langchain.com/llms.txt",
+        "--transport",
+        "stdio"
       ]
     }
   }
@@ -63,4 +76,34 @@ The file should be located in a path such as `~/Library/Application\ Support/Cla
     }
   }
 }
+```
+#### Commands used
+```
+- INSTALL MCPDOC AND TEST IT USING INSPECTOR
+sudo snap install astral-uv --classic
+uv venv
+source .venv/bin/activate
+uv pip install .
+which uv
+
+uvx --from mcpdoc mcpdoc \
+    --urls "LangGraph:https://langchain-ai.github.io/langgraph/llms.txt" "LangChain:https://python.langchain.com/llms.txt" \
+    --transport sse \
+    --port 8082 \
+    --host localhost
+
+nvm list
+nvm use 20.11.0
+
+npx @modelcontextprotocol/inspector
+
+- CREATE A NEW PROJECT (MCP SERVER)
+uv init shellserver
+cd shellserver/
+uv venv
+source .venv/bin/activate
+uv add "mcp[cli]"
+touch server.py
+rm main.py
+cursor .
 ```
