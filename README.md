@@ -21,6 +21,7 @@
 [MCP Docs](https://modelcontextprotocol.io/docs/getting-started/intro)  
 
 #### Sample of a mcp.json (Cursor file to configure MCP servers)
+The file should be located in ~/.cursor/mcp.json
 ```json
 {
   "mcpServers": {
@@ -28,6 +29,18 @@
       "command": "/home/anyuser/.nvm/versions/node/v20.11.0/bin/node",
       "args": [
         "/home/anyuser/quickstart-resources/weather-server-typescript/build/index.js"
+      ]
+    },
+    "langgraph-docs-mcp": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "mcpdoc",
+        "mcpdoc",
+        "--urls",
+        "LangGraph:https://langchain-ai.github.io/langgraph/llms.txt LangChain:https://python.langchain.com/llms.txt",
+        "--transport",
+        "stdio"
       ]
     }
   }
