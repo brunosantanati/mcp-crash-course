@@ -79,6 +79,7 @@ The file should be located in a path such as `~/Library/Application\ Support/Cla
 ```
 #### Commands used
 ```
+- INSTALL MCPDOC AND TEST IT USING INSPECTOR
 sudo snap install astral-uv --classic
 uv venv
 source .venv/bin/activate
@@ -95,4 +96,14 @@ nvm list
 nvm use 20.11.0
 
 npx @modelcontextprotocol/inspector
+
+- CREATE A NEW PROJECT (MCP SERVER)
+uv init shellserver
+cd shellserver/
+uv venv
+source .venv/bin/activate
+uv add "mcp[cli]"
+touch server.py
+rm main.py
+cursor .
 ```
