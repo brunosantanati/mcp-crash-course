@@ -19,6 +19,7 @@
 [MCP Crash Course Github Repository](https://github.com/emarco177/mcp-crash-course)  
 [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)  
 [MCP Docs](https://modelcontextprotocol.io/docs/getting-started/intro)  
+[Cursor rules for Python](https://cursor.directory/rules/python)  
 
 #### Sample of a mcp.json (Cursor file to configure MCP servers)
 The file should be located in ~/.cursor/mcp.json
