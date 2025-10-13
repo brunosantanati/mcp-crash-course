@@ -107,4 +107,9 @@ uv add "mcp[cli]"
 touch server.py
 rm main.py
 cursor .
+
+- PROMPT FOR TERMINAL TOOL
+Note: before you run this prompt you should import the MCP documentation and MCP Python SDK to be indexed by Cursor, and then you will be able to tag these documentations in your prompt.
+
+I want you to implement me a simple MCP Server from @MCP documentation . Use the Python SDK @MCP Python SDK and the server should expose one tool which is called terminal tool which will allow user to run terminal commands, make it simple.
 ```
