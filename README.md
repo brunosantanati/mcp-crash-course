@@ -43,6 +43,12 @@ The file should be located in ~/.cursor/mcp.json
         "--transport",
         "stdio"
       ]
+    },
+    "shell": {
+      "command": "/snap/bin/uv",
+      "args": [
+        "--directory", "/home/anyuser/shellserver", "run", "server.py"
+      ]
     }
   }
 }
@@ -107,6 +113,11 @@ uv add "mcp[cli]"
 touch server.py
 rm main.py
 cursor .
+uv run server.py
+
+- ADDITIONAL COMMANDS
+Deactivate virtual environment:
+deactivate
 
 - PROMPT FOR TERMINAL TOOL
 Note: before you run this prompt you should import the MCP documentation and MCP Python SDK to be indexed by Cursor, and then you will be able to tag these documentations in your prompt.
