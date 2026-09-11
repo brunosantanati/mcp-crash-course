@@ -29,7 +29,7 @@ The file should be located in ~/.cursor/mcp.json
     "weather": {
       "command": "/home/anyuser/.nvm/versions/node/v20.11.0/bin/node",
       "args": [
-        "/home/anyuser/quickstart-resources/weather-server-typescript/build/index.js"
+        "/home/anyuser/path-to/quickstart-resources/weather-server-typescript/build/index.js"
       ]
     },
     "langgraph-docs-mcp": {
@@ -47,14 +47,14 @@ The file should be located in ~/.cursor/mcp.json
     "shell": {
       "command": "/snap/bin/uv",
       "args": [
-        "--directory", "/home/anyuser/shellserver", "run", "server.py"
+        "--directory", "/home/anyuser/path-to/shellserver", "run", "server.py"
       ]
     }
   }
 }
 ```
 #### Sample of a Claude Desktop file to configure MCP servers
-The file should be located in a path such as `~/Library/Application\ Support/Claude/claude_desktop_config.json`  
+The file should be located in a path such as `~/Library/Application\ Support/Claude/claude_desktop_config.json` (or in my case `/home/bruno/.config/Claude/claude_desktop_config.json`)  
 
 - Sample for a Python MCP server  
 ```json
@@ -64,7 +64,7 @@ The file should be located in a path such as `~/Library/Application\ Support/Cla
       "command": "uv",
       "args": [
         "--directory",
-        "/ABSOLUTE/PATH/TO/PARENT/FOLDER/weather",
+        "/path-to/quickstart-resources/weather-server-python",
         "run",
         "weather.py"
       ]
@@ -79,11 +79,55 @@ The file should be located in a path such as `~/Library/Application\ Support/Cla
   "mcpServers": {
     "weather": {
       "command": "node",
-      "args": ["/ABSOLUTE/PATH/TO/PARENT/FOLDER/weather/build/index.js"]
+      "args": ["/path-to/quickstart-resources/weather-server-typescript/build/index.js"]
     }
   }
 }
 ```
+
+- Entire file content
+```json
+{
+  "coworkUserFilesPath": "/home/anyuser/Claude",
+  "preferences": {
+    ...
+  },
+  "mcpServers": {
+    "weather": {
+      "command": "/home/anyuser/.nvm/versions/node/v20.11.0/bin/node",
+      "args": [
+        "/home/anyuser/path-to/quickstart-resources/weather-server-typescript/build/index.js"
+      ]
+    },
+    "langgraph-docs-mcp": {
+      "command": "/snap/bin/uvx",
+      "args": [
+      	"--with",
+    	"mcp<2",
+        "--from",
+        "mcpdoc",
+        "mcpdoc",
+        "--urls",
+        "LangGraph:https://langchain-ai.github.io/langgraph/llms.txt LangChain:https://python.langchain.com/llms.txt",
+        "--transport",
+        "stdio"
+      ]
+    },
+    "shell": {
+      "command": "/snap/bin/uv",
+      "args": [
+        "--directory",
+        "/home/anyuser/path-to/mcp-crash-course/original-files/mcp-crash-course",
+        "run",
+        "server.py"
+      ]
+    }
+  }
+}
+```
+
+Close Claude Desktop and run `pkill -f claude` after changing the file, in order to apply changes and enable MCP Servers.
+
 #### Commands used
 
 ##### INSTALL MCPDOC AND TEST IT USING INSPECTOR
