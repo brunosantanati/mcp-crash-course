@@ -195,6 +195,7 @@ Run it in the folder `mcp-crash-course/original-files/mcp-crash-course`:
 ```sh
 docker build -t shellserver-app .
 docker run -it --rm shellserver-app
-docker logs bfccac040a8a
-docker kill bfccac040a8a
+docker logs <CONTAINER_ID>
+docker logs <CONTAINER_ID> --follow
+docker kill <CONTAINER_ID>
 ```
