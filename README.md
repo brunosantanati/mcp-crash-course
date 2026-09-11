@@ -85,8 +85,9 @@ The file should be located in a path such as `~/Library/Application\ Support/Cla
 }
 ```
 #### Commands used
-```
-- INSTALL MCPDOC AND TEST IT USING INSPECTOR
+
+##### INSTALL MCPDOC AND TEST IT USING INSPECTOR
+```sh
 sudo snap install astral-uv --classic
 uv venv
 source .venv/bin/activate
@@ -103,8 +104,10 @@ nvm list
 nvm use 20.11.0
 
 npx @modelcontextprotocol/inspector
+```
 
-- CREATE A NEW PROJECT (MCP SERVER)
+##### CREATE A NEW PROJECT (MCP SERVER)
+```sh
 uv init shellserver
 cd shellserver/
 uv venv
@@ -114,12 +117,16 @@ touch server.py
 rm main.py
 cursor .
 uv run server.py
+```
 
-- ADDITIONAL COMMANDS
+##### ADDITIONAL COMMANDS
+```sh
 Deactivate virtual environment:
 deactivate
+```
 
-- PROMPT FOR TERMINAL TOOL
+##### PROMPT FOR TERMINAL TOOL
+```
 Note: before you run this prompt you should import the MCP documentation and MCP Python SDK to be indexed by Cursor, and then you will be able to tag these documentations in your prompt.
 
 I want you to implement me a simple MCP Server from @MCP documentation . Use the Python SDK @MCP Python SDK and the server should expose one tool which is called terminal tool which will allow user to run terminal commands, make it simple.
