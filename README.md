@@ -130,7 +130,7 @@ Close Claude Desktop and run `pkill -f claude` after changing the file, in order
 
 #### Commands used
 
-##### INSTALL MCPDOC AND TEST IT USING INSPECTOR
+##### Install mcpdoc and test it using inspector
 ```sh
 sudo snap install astral-uv --classic
 uv venv
@@ -150,7 +150,7 @@ nvm use 20.11.0
 npx @modelcontextprotocol/inspector
 ```
 
-##### CREATE A NEW PROJECT (MCP SERVER)
+##### Create a new project (MCP server)
 ```sh
 uv init shellserver
 cd shellserver/
@@ -163,15 +163,23 @@ cursor .
 uv run server.py
 ```
 
-##### ADDITIONAL COMMANDS
+##### Additional commands
 ```sh
 Deactivate virtual environment:
 deactivate
 ```
 
-##### PROMPT FOR TERMINAL TOOL
+##### Prompt for terminal tool
 ```
 Note: before you run this prompt you should import the MCP documentation and MCP Python SDK to be indexed by Cursor, and then you will be able to tag these documentations in your prompt.
 
 I want you to implement me a simple MCP Server from @MCP documentation . Use the Python SDK @MCP Python SDK and the server should expose one tool which is called terminal tool which will allow user to run terminal commands, make it simple.
+```
+
+##### Dockerize shellserver project
+Run it in the folder `mcp-crash-course/original-files/mcp-crash-course`:
+```sh
+docker build -t shellserver-app .
+docker run -it --rm shellserver-app
+docker logs bfccac040a8a
 ```
