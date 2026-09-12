@@ -165,7 +165,7 @@ nvm use 20.11.0
 npx @modelcontextprotocol/inspector
 ```
 
-##### Create a new project (MCP server)
+##### Create a new project shellserver (MCP server)
 ```sh
 uv init shellserver
 cd shellserver/
@@ -200,4 +200,25 @@ docker logs <CONTAINER_ID>
 docker logs <CONTAINER_ID> --follow
 docker kill <CONTAINER_ID>
 docker exec -it <CONTAINER_ID> sh
+```
+
+##### Create the project langchain-mcp-adapters
+```sh
+# it was created from the original repo' main branch
+git checkout --orphan project/langchain-mcp-adapters
+git rm -rf .
+uv init
+uv venv
+source .venv/bin/activate
+uv add langchain-mcp-adapters langgraph langchain-openai
+uv add python-dotenv
+git add .
+# Alternative commands to clone the resulting state:
+git clone -b project/langchain-mcp-adapters https://github.com/emarco177/mcp-crash-course.git
+cd langchain-mcp-adapters
+git checkout f3567e5babb9bc91e8406d41ee82f2331f5641fe
+
+# Run servers
+uv run servers/math_server.py
+uv run servers/weather_server.py
 ```
