@@ -23,6 +23,7 @@
 - [hacked.txt](https://gist.githubusercontent.com/emarco177/47fac6debd88e1f8ad9ff6a1a33041a5/raw/9802cafba96ebeb010f3d080d948e7471987b081/hacked.txt)  
 - [OWASP Top 10 for Large Language Model Applications](https://owasp.github.io/www-project-top-10-for-large-language-model-applications/)  
 - [The Model Context Protocol: Simplifying Building AI apps with Anthropic Claude Desktop and Docker](https://www.docker.com/blog/the-model-context-protocol-simplifying-building-ai-apps-with-anthropic-claude-desktop-and-docker/)  
+- [langchain-mcp-adapters](https://github.com/langchain-ai/langchain-mcp-adapters)
 
 #### :information_source: Sample of a mcp.json (Cursor file to configure MCP servers)
 The file should be located in `~/.cursor/mcp.json`
@@ -198,4 +199,5 @@ docker run -it --rm shellserver-app
 docker logs <CONTAINER_ID>
 docker logs <CONTAINER_ID> --follow
 docker kill <CONTAINER_ID>
+docker exec -it <CONTAINER_ID> sh
 ```
