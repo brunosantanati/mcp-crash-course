@@ -221,4 +221,7 @@ git checkout f3567e5babb9bc91e8406d41ee82f2331f5641fe
 # Run servers
 uv run servers/math_server.py
 uv run servers/weather_server.py
+
+# Run main program
+uv run main.py
 ```
