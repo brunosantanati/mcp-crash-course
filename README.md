@@ -128,6 +128,12 @@ The file should be located in a path such as `~/Library/Application\ Support/Cla
         "run",
         "server.py"
       ]
+    },
+    "research-prompt-mcp": {
+      "command": "/home/anyuser/path-to/mcp-crash-course/my-code/prompts/.venv/bin/python3",
+      "args": [
+        "/home/anyuser/path-to/mcp-crash-course/my-code/prompts/main.py"
+      ]
     }
   }
 }

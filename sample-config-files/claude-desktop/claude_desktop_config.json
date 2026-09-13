@@ -54,8 +54,8 @@
     "langgraph-docs-mcp": {
       "command": "/snap/bin/uvx",
       "args": [
-      	"--with",
-    	"mcp<2",
+        "--with",
+        "mcp<2",
         "--from",
         "mcpdoc",
         "mcpdoc",
@@ -67,7 +67,21 @@
     },
     "docker-shell": {
       "command": "docker",
-      "args": ["run", "-i",  "--rm", "--init", "-e", "DOCKER_CONTAINER=true", "shellserver-app"]
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "--init",
+        "-e",
+        "DOCKER_CONTAINER=true",
+        "shellserver-app"
+      ]
+    },
+    "research-prompt-mcp": {
+      "command": "/home/anyuser/path-to/mcp-crash-course/my-code/prompts/.venv/bin/python3",
+      "args": [
+        "/home/anyuser/path-to/mcp-crash-course/my-code/prompts/main.py"
+      ]
     }
   }
 }
