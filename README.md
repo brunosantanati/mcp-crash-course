@@ -27,6 +27,9 @@
 - [What is the Model Context Protocol (MCP)?](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro)
 - [Resources](https://modelcontextprotocol.io/specification/2026-07-28/server/resources)
 - [Prompts](https://modelcontextprotocol.io/specification/2026-07-28/server/prompts)
+- [GPT Researcher Prompt Example](https://github.com/assafelovic/gptr-mcp/blob/master/server.py#L258)
+- [FastMCP Prompts](https://gofastmcp.com/servers/prompts)
+- [FastMCP Resources & Templates](https://gofastmcp.com/servers/resources)
 
 #### :information_source: Sample of a mcp.json (Cursor file to configure MCP servers)
 The file should be located in `~/.cursor/mcp.json`
@@ -134,6 +137,10 @@ The file should be located in a path such as `~/Library/Application\ Support/Cla
       "args": [
         "/home/anyuser/path-to/mcp-crash-course/my-code/prompts/main.py"
       ]
+    },
+    "pokemon": {
+      "command": "/snap/bin/uv",
+      "args": ["--directory", "/home/anyuser/path-to/mcp-crash-course/my-code/resources", "run", "main.py"]
     }
   }
 }
