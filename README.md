@@ -33,6 +33,7 @@
 - [Claude Code - Setup and access Advanced setup](https://code.claude.com/docs/en/setup)
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
 - [Search MCP Servers](https://glama.ai/mcp/servers)
+- [playwright-mcp](https://github.com/microsoft/playwright-mcp)
 
 #### :information_source: Sample of a mcp.json (Cursor file to configure MCP servers)
 The file should be located in `~/.cursor/mcp.json`
@@ -144,6 +145,16 @@ The file should be located in a path such as `~/Library/Application\ Support/Cla
     "pokemon": {
       "command": "/snap/bin/uv",
       "args": ["--directory", "/home/anyuser/path-to/mcp-crash-course/my-code/resources", "run", "main.py"]
+    },
+    "playwright": {
+      "command": "/home/anyuser/.nvm/versions/node/v22.23.2/bin/npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "env": {
+        "PATH": "/home/anyuser/.nvm/versions/node/v22.23.2/bin:/usr/local/bin:/usr/bin:/bin"
+      }
     }
   }
 }

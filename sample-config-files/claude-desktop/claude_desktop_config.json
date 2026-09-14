@@ -82,6 +82,25 @@
       "args": [
         "/home/anyuser/path-to/mcp-crash-course/my-code/prompts/main.py"
       ]
+    },
+    "pokemon": {
+      "command": "/snap/bin/uv",
+      "args": [
+        "--directory",
+        "/home/anyuser/path-to/mcp-crash-course/my-code/resources",
+        "run",
+        "main.py"
+      ]
+    },
+    "playwright": {
+      "command": "/home/anyuser/.nvm/versions/node/v22.23.2/bin/npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "env": {
+        "PATH": "/home/anyuser/.nvm/versions/node/v22.23.2/bin:/usr/local/bin:/usr/bin:/bin"
+      }
     }
   }
 }
