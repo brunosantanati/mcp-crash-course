@@ -209,7 +209,7 @@ I want you to implement me a simple MCP Server from @MCP documentation . Use the
 ```
 
 ##### Dockerize shellserver project
-Run it in the folder `mcp-crash-course/original-files/mcp-crash-course`:
+Run it in the folder `mcp-crash-course/original-files/shellserver`:
 ```sh
 docker build -t shellserver-app .
 docker run -it --rm shellserver-app
@@ -262,4 +262,11 @@ claude
 # > get me all fire pokemons
 # > get me info about charizard
 # > get me info about mewtwo
+```
+
+##### Run the sse project
+```sh
+uv run servers/math_server.py
+uv run servers/weather_server.py
+uv run langchain_client.py
 ```
