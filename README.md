@@ -31,6 +31,8 @@
 - [FastMCP Prompts](https://gofastmcp.com/servers/prompts)
 - [FastMCP Resources & Templates](https://gofastmcp.com/servers/resources)
 - [Claude Code - Setup and access Advanced setup](https://code.claude.com/docs/en/setup)
+- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
+- [Search MCP Servers](https://glama.ai/mcp/servers)
 
 #### :information_source: Sample of a mcp.json (Cursor file to configure MCP servers)
 The file should be located in `~/.cursor/mcp.json`
