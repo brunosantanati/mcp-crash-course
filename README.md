@@ -30,6 +30,7 @@
 - [GPT Researcher Prompt Example](https://github.com/assafelovic/gptr-mcp/blob/master/server.py#L258)
 - [FastMCP Prompts](https://gofastmcp.com/servers/prompts)
 - [FastMCP Resources & Templates](https://gofastmcp.com/servers/resources)
+- [Claude Code - Setup and access Advanced setup](https://code.claude.com/docs/en/setup)
 
 #### :information_source: Sample of a mcp.json (Cursor file to configure MCP servers)
 The file should be located in `~/.cursor/mcp.json`
@@ -240,4 +241,25 @@ uv run servers/weather_server.py
 
 # Run main program
 uv run main.py
+```
+
+##### Integrate Claude Code with a MCP Server
+```sh
+# Install Claude Code
+curl -fsSL https://claude.ai/install.sh | bash
+
+# Add a MCP Server
+claude mcp list
+claude mcp add -t http pokemon http://127.0.0.1:8000/mcp/
+claude mcp get pokemon
+
+# Use the MCP Server
+claude
+# Inside Claude Code we can ask these questions to use the MCP Server
+# > which mcps do you have?
+# > can you use the pokemon starters?
+# > get me the pokemon 25
+# > get me all fire pokemons
+# > get me info about charizard
+# > get me info about mewtwo
 ```
