@@ -34,6 +34,7 @@
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
 - [Search MCP Servers](https://glama.ai/mcp/servers)
 - [playwright-mcp](https://github.com/microsoft/playwright-mcp)
+- [Cloudflare AI](https://github.com/cloudflare/ai)
 
 #### :information_source: Sample of a mcp.json (Cursor file to configure MCP servers)
 The file should be located in `~/.cursor/mcp.json`
