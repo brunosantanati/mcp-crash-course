@@ -35,6 +35,16 @@
 - [Search MCP Servers](https://glama.ai/mcp/servers)
 - [playwright-mcp](https://github.com/microsoft/playwright-mcp)
 - [Cloudflare AI](https://github.com/cloudflare/ai)
+- [TODOs API GitHub Code](https://github.com/cloudflare/ai/blob/main/demos/remote-mcp-auth0/todos-api/src/index.ts)
+- [Middleware GitHub Code](https://github.com/cloudflare/ai/blob/main/demos/remote-mcp-auth0/todos-api/src/middlewares/jwt.ts)
+- [Secure and Deploy Remote MCP Servers with Auth0 and Cloudflare](https://auth0.com/blog/secure-and-deploy-remote-mcp-servers-with-auth0-and-cloudflare/)
+- [Validate JSON Web Tokens](https://auth0.com/docs/secure/tokens/json-web-tokens/validate-json-web-tokens)
+- [What Is JWT and Why Should You Use JWT](https://www.youtube.com/watch?v=7Q17ubqLfaM&t=176s)
+- [OAuth 2.0 and OpenID Connect (in plain English)](https://www.youtube.com/watch?v=996OiexHze0)
+- [.well-known/oauth-authorization-server](https://www.perplexity.ai/search/47350c91-7daf-4388-8fc3-3a77f745cca3)
+- [oauth /register](https://www.perplexity.ai/search/47350c91-7daf-4388-8fc3-3a77f745cca3#1)
+- [Cloudflare Workers AI LLM Playground](https://playground.ai.cloudflare.com/)
+- [mcp-remote NPM package](https://www.npmjs.com/package/mcp-remote)
 
 #### :information_source: Sample of a mcp.json (Cursor file to configure MCP servers)
 The file should be located in `~/.cursor/mcp.json`
