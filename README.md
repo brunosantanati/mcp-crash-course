@@ -45,6 +45,7 @@
 - [oauth /register](https://www.perplexity.ai/search/47350c91-7daf-4388-8fc3-3a77f745cca3#1)
 - [Cloudflare Workers AI LLM Playground](https://playground.ai.cloudflare.com/)
 - [mcp-remote NPM package](https://www.npmjs.com/package/mcp-remote)
+- [Agent2Agent Protocol (A2A)](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
 
 #### :information_source: Sample of a mcp.json (Cursor file to configure MCP servers)
 The file should be located in `~/.cursor/mcp.json`
