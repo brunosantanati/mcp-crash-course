@@ -11,7 +11,7 @@
 - [Running MCP Servers with Transports- FastMCP 2.0](https://gofastmcp.com/servers/server#running-the-server)  
 - [Server (Low Level)](https://github.com/modelcontextprotocol/python-sdk/blob/main/src/mcp/server/lowlevel/server.py)  
 - [FastMCP](https://github.com/modelcontextprotocol/python-sdk/blob/main/src/mcp/server/fastmcp/server.py)  
-- [FastMCP 2.0](https://gofastmcp.com/getting-started/welcome)  
+- [FastMCP 2.0 Docs](https://gofastmcp.com/getting-started/welcome)  
 - [MCP Inspector Official Docs](https://modelcontextprotocol.io/docs/tools/inspector)  
 - [MCP Inspector Github Repository Open Source](https://github.com/modelcontextprotocol/inspector)  
 - [LangChain LLM.txt](https://langchain-ai.github.io/langgraph/llms-txt-overview/)  
@@ -46,6 +46,7 @@
 - [Cloudflare Workers AI LLM Playground](https://playground.ai.cloudflare.com/)
 - [mcp-remote NPM package](https://www.npmjs.com/package/mcp-remote)
 - [Agent2Agent Protocol (A2A)](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
+- [FastMCP 2.0 Github Repository](https://github.com/PrefectHQ/fastmcp)
 
 #### :information_source: Sample of a mcp.json (Cursor file to configure MCP servers)
 The file should be located in `~/.cursor/mcp.json`
